@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div style={{height: '80px', backgroundColor: 'blue', textAlign: 'center', alignItems: 'center', display: 'flex', justifyContent: 'center'}}>
+          Hello
+        </div>
+          {children}
+      </body>
     </html>
   );
 }
